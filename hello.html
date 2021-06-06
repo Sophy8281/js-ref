@@ -35,10 +35,39 @@
         <button type="button" onclick="document.getElementById('show').style.display='block'">Click Me to show hidden element!</button>
         <hr></hr>
 
+        <!-- Output-innerHtml -->
+        <p id="inner"></p>
+        <hr></hr>
+
+        <!-- Output-document.write -->
+        <p>This deletes all html loaded before clicking it</p>
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+        <hr></hr>
+
         <script>
             function hello(){
                 document.getElementById("hello2").innerHTML = "Hello JavaScript! (using a function in the script tag)";
             }
+        </script>
+
+        <!-- Output-innerHtml -->
+        <script>
+            document.getElementById("inner").innerHTML = 5 + 6;
+        </script>
+
+        <!-- Output-window.alert -->
+        <script>
+            window.alert(5 + 6);
+        </script>
+
+        <!-- Output-document.write -->
+        <script>
+            document.write(5 + 6);
+        </script>
+
+         <!-- Output-console.log -->
+        <script>
+            console.log(5 + 6);
         </script>
     </body>
 </html>
