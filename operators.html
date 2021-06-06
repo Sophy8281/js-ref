@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operators</title>
+    </head>
+<body>
+
+    <!--Operators-->
+
+    <p id="operator1"></p>
+    <p id="operator2"></p>
+    <p id="operator3"></p>
+    <p id="operator4"></p>
+    <p id="operator5"></p>
+    <p id="operator6"></p>
+
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("operator1").innerHTML = z;
+    </script>
+
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x * y;
+        document.getElementById("operator2").innerHTML = z;
+    </script>
+    
+    <script>
+        var x = 10;
+        x += 5;
+        document.getElementById("operator3").innerHTML = x;
+    </script>
+
+    <script>
+        var txt1 = "Jane";
+        var txt2 = "Doe";
+        document.getElementById("operator4").innerHTML = txt1 + " " + txt2;
+    </script>
+
+    <script>
+        txt1 = "What a very ";
+        txt1 += "nice day";
+        document.getElementById("operator5").innerHTML = txt1;
+    </script>
+
+    <script>
+        var x = 5 + 5;
+        var y = "5" + 5 + 5;
+        var z = "Hello" + 5;
+        document.getElementById("operator6").innerHTML =
+        x + "<br>" + y + "<br>" + z;
+    </script>
+
+</body>
