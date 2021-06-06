@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+    </head>
+<body>
+
+    <!--JavaScript Objects-->
+
+    <p id="object"></p>
+
+    <script>
+        var person = {
+            firstName : "Jane",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "brown"
+        };
+
+        // objectName.propertyName
+        // document.getElementById("object").innerHTML =
+        // person.firstName + " is " + person.age + " years old.";
+
+        // objectName["propertyName"]
+        document.getElementById("object").innerHTML =
+        person["firstName"] + " " + person["lastName"];
+    </script>
+
+</body>
+</html>
