@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello JavaScript</title>
+    </head>
+    <body>
+        
+        <button type="button" onclick='document.getElementById("hello1").innerHTML = "Hello JavaScript!  (using onclick method)"'>Click Me!</button>
+        <div id="hello1"></div>
+        <hr></hr>
+        
+        <button type="button" onclick="hello()">Click Me!</button>
+        <div id="hello2"></div>
+        <hr></hr>
+
+        <button type="button"onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+        <p id="demo"></p>
+        <hr></hr>
+
+        <p>Changing HTML attribute values</p>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+        <hr></hr>
+
+        <p id="style">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('style').style.fontWeight='bold'">Click Me!</button>
+        <hr></hr>
+
+        <p id="hide">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('hide').style.display='none'">Click Me to hide element above!</button>
+        <hr></hr>
+
+        <p id="show" style="display:none">JavaScript can show hidden HTML elements.</p>
+        <button type="button" onclick="document.getElementById('show').style.display='block'">Click Me to show hidden element!</button>
+        <hr></hr>
+
+        <script>
+            function hello(){
+                document.getElementById("hello2").innerHTML = "Hello JavaScript! (using a function in the script tag)";
+            }
+        </script>
+    </body>
+</html>
