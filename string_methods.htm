@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+<body>
+
+    <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+    <p id="string1"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate");
+        document.getElementById("string1").innerHTML = pos;
+    </script>
+
+    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+    <p id="string2"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");
+        document.getElementById("string2").innerHTML = pos;
+    </script>
+
+    <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+
+    <p id="string3"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("John");
+        document.getElementById("string3").innerHTML = pos;
+    </script>
+
+    <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+    <p id="string4"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate",15);
+        document.getElementById("string4").innerHTML = pos;
+    </script>
+
+    <p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+    <p id="string5"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.search("locate");
+        document.getElementById("string5").innerHTML = pos;
+    </script>
+
+    <p>The slice() method extract a part of a string and returns the extracted parts in a new string:</p>
+    
+    <p id="string6"></p>
+    
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(5,13);
+        document.getElementById("string6").innerHTML = res; 
+    </script>
+
+    <p id="string7"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-12,-6);
+        document.getElementById("string7").innerHTML = res;
+    </script>
+
+    <p id="string8"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7);
+        document.getElementById("string8").innerHTML = res;
+    </script>
+
+    <p id="string9"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(-7);
+        document.getElementById("string9").innerHTML = res;
+    </script>
+
+    <p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+    
+    <p id="string10"></p>
+    
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substring(7,13);
+        document.getElementById("string10").innerHTML = res;
+    </script>
+
+    <p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+    <p id="string11"></p>
+        
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(7,6);
+        document.getElementById("string11").innerHTML = res;
+    </script>
+
+    <p id="string12"></p>
+
+    <script>
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(-4);
+        document.getElementById("string12").innerHTML = res;
+    </script>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="string13">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction1() {
+            var str = document.getElementById("string13").innerHTML; 
+            var txt = str.replace("Microsoft","W3Schools");
+            document.getElementById("string13").innerHTML = txt;
+        }
+    </script>
+
+    <p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="string14">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction2() {
+            var str = document.getElementById("string14").innerHTML; 
+            var txt = str.replace(/Microsoft/g,"W3Schools");
+            document.getElementById("string14").innerHTML = txt;
+        }
+    </script>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction3()">Try it</button>
+
+    <p id="string15">Please visit Microsoft!</p>
+
+    <script>
+    function myFunction3() {
+            var str = document.getElementById("string15").innerHTML; 
+            var txt = str.replace(/MICROSOFT/i,"W3Schools");
+            document.getElementById("string15").innerHTML = txt;
+        }
+    </script>
+
+    <p>Convert string to upper case:</p>
+
+    <button onclick="myFunction4()">Try it</button>
+
+    <p id="string16">Hello World!</p>
+
+    <script>
+        function myFunction4() {
+            var text = document.getElementById("string16").innerHTML;
+            document.getElementById("string16").innerHTML = text.toUpperCase();
+        }
+    </script>
+
+    
+    <p>Convert string to lower case:</p>
+
+    <button onclick="myFunction5()">Try it</button>
+
+    <p id="string17">Hello World!</p>
+
+    <script>
+        function myFunction5() {
+            var text = document.getElementById("string17").innerHTML;
+            document.getElementById("string17").innerHTML = text.toLowerCase();
+        }
+    </script>
+</body>
+</html>
