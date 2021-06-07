@@ -7,8 +7,10 @@
 
     <!--JavaScript String Properties-->
 
-    <p id="string1"></p>
-    <p id="string2"></p>
+    <p id="string1"></p><hr></hr>
+    <p id="string2"></p><hr></hr>
+    <p>Using quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+    <p id="string3"></p>
 
     <script>
         var string1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -16,6 +18,15 @@
 
         var x = "We are the so-called \"Vikings\" from the north.";
         document.getElementById("string2").innerHTML = x;
+    </script>
+
+    <script>
+        var answer1 = "It's alright";
+        var answer2 = "He is called 'Johnny'";
+        var answer3 = 'He is called "Johnny"'; 
+        
+        document.getElementById("string3").innerHTML =
+        answer1 + "<br>" + answer2 + "<br>" + answer3; 
     </script>
 
 </body>
