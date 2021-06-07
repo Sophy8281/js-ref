@@ -185,5 +185,54 @@
             document.getElementById("string17").innerHTML = text.toLowerCase();
         }
     </script>
+
+    <p>The concat() method joins two or more strings:</p>
+
+    <p id="string18"></p>
+
+    <script>
+        var text1 = "Hello";
+        var text2 = "World!";
+        var text3 = text1.concat(" ",text2);
+        document.getElementById("string18").innerHTML = text3;
+    </script>
+
+    <p>Click the button to alert the string with removed whitespace.</p>
+
+    <button onclick="myFunction6()">Try it</button>
+
+    <script>
+        function myFunction6() {
+            var str = "       Hello World!       ";
+            alert(str.trim());
+        }
+    </script>
+
+    <p>Click "Try it" to display the first array element, after a string split.</p>
+
+    <button onclick="myFunction7()">Try it</button>
+
+    <p id="string19"></p>
+
+    <script>
+        function myFunction7() {
+            var str = "a,b,c,d,e,f";
+            var arr = str.split(",");// Split on commas
+            document.getElementById("string19").innerHTML = arr[0];
+        }
+    </script>
+
+    <p id="string20"></p>
+
+    <script>
+        var str = "Hello";
+        var arr = str.split("");
+        var text = "";
+        var i;
+        for (i = 0; i < arr.length; i++) {
+            text += arr[i] + "<br>"
+        }
+        document.getElementById("string20").innerHTML = text;
+    </script>
 </body>
 </html>
