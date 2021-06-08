@@ -3,7 +3,7 @@
     <head>
         <title>JavaScript Array Methods<</title>
     </head>
-<body>
+<bo>
 
     <h2>JavaScript Array Methods</h2> 
 
@@ -104,6 +104,74 @@
     }
     </script>
 
+    <!--concat()-->
+    <p>The concat() method is used to merge (concatenate) arrays:</p>
+
+    <p id="demo11"></p>
+    <hr>
+    
+    <script>
+        var arr1 = ["Cecilie", "Lone"];
+        var arr2 = ["Emil", "Tobias", "Linus"];
+        var arr3 = ["Robin", "Morgan"];
+        
+        var myFamily = arr1.concat(arr2, arr3); 
+        
+        document.getElementById("demo11").innerHTML = myFamily;
+    </script>
+
+    <p>The concat() method can also merge values to arrays:</p>
+
+    <p id="demo12"></p>
+    <hr>
+    
+    <script>
+        var arr1 = ["Cecilie", "Lone"];
+        var myChildren = arr1.concat(["Emil", "Tobias", "Linus"]); 
+        document.getElementById("demo12").innerHTML = myChildren;
+    </script>
+
+    <p>This  example slices out a part of an array starting from array element 3 ("Apple")</p>
+
+    <p id="demo12"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var citrus = fruits.slice(3);
+        document.getElementById("demo13").innerHTML = fruits + "<br><br>" + citrus;
+    </script>
+
+    <p>slice() method with two arguments:</p>
+
+    <p id="demo13"></p>
+    <hr>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var citrus = fruits.slice(1,4);//selects array elements from the start argument, and up to (but not included) the end argument
+        document.getElementById("demo13").innerHTML = fruits + "<br><br>" + citrus;
+    </script>
+
+    <!--reverse() and sort()-->
+    <p>The reverse() method reverses the elements in an array.</p>
+    <p>By combining sort() and reverse() you can sort an array in descending order.</p>
+    <button onclick="myFunction4()">Try it</button>
+    
+    <p id="demo14"></p>
+    
+    <script>
+    // Create and display an array:
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo14").innerHTML = fruits;
+    
+    function myFunction4() {
+        // First sort the array
+        fruits.sort();
+        // Then reverse it:
+        fruits.reverse();
+        document.getElementById("demo14").innerHTML = fruits;
+    }
+    </script>
 
 </body>
 </html>
