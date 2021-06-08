@@ -8,10 +8,78 @@
     <!--JavaScript Arrays-->
 
     <p id="array"></p>
+    <hr></hr>
 
     <script>
-        var animals = ["cow","cat","dog"];
-        document.getElementById("array").innerHTML = animals[0];
+        var animals = ["cow","cat","dog", 10];
+        document.getElementById("array").innerHTML = animals[3];
+    </script>
+
+    <p id="array1"></p>
+    <hr></hr>
+
+    <script>
+        var animals = ["cow","cat","dog",10];
+        document.getElementById("array1").innerHTML = animals;
+    </script>
+
+    <p id="array3"></p>
+    <hr></hr>
+
+    <script>
+        var person = {firstName:"Jane", lastName:"Doe", age:46};
+        document.getElementById("array3").innerHTML = person.lastName + " "+ "is"+ " " + person["age"] + " " + "years old.";
+    </script>
+
+    <p>The length property returns the length of an array.</p>
+    <p id="demo"></p>
+    <hr></hr>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.length;
+    </script>
+
+    <p>The sort property sorts elements in an array.</p>
+    <p id="demo1"></p>
+    <hr></hr>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits.sort();
+    </script>
+
+    
+    <p>The push method appends a new element to an array.</p>
+    <button onclick="myFunction()">Add fruit</button>
+
+    <p id="demo2"></p>
+    <hr></hr>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo2").innerHTML = fruits;
+
+        function myFunction() {
+            fruits.push("Lemon");// can accept multiple elements
+            document.getElementById("demo2").innerHTML = fruits;//can accept length and sort() property
+        }
+    </script>
+
+    <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo3"></p>
+    <hr></hr>
+
+    <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo3").innerHTML = fruits;
+
+    function myFunction1() {
+        fruits[fruits.length] = "Lemon";
+        document.getElementById("demo3").innerHTML = fruits;
+    }
     </script>
 
 </body>
