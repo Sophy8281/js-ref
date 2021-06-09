@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Forms Api</title></head>
+<body>
+
+<p>Enter a number and click OK:</p>
+
+<!-- checkValidity() and validationMessage -->
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p><hr>
+
+<!-- rangeOverflow -->
+<p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
+
+<input id="id2" type="number" max="100">
+<button onclick="myFunction1()">OK</button>
+
+<p id="demo1"></p><hr>
+
+<!-- rangeUnderflow -->
+<p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+
+<input id="id3" type="number" min="100">
+<button onclick="myFunction2()">OK</button>
+
+<p id="demo2"></p>
+
+<script src="forms_api.js"></script>
+
+</body>
+</html>
