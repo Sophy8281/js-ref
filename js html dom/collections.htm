@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DOM Collections</title></head>
+<body>
+    <!-- The HTMLCollection Object -->
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p id="demo"></p><hr>
+    <p>Length of Collection</p>
+    <p id="demo2"></p>
+
+    <script>
+        var myCollection = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML =
+        "The innerHTML of the second paragraph is: " +
+        myCollection[1].innerHTML;
+
+        //Length of Collection
+        document.getElementById("demo2").innerHTML = 
+        "This document contains " + myCollection.length + " paragraphs.";
+    </script>
+    
+    <!-- Use of Length of Collection -->
+    <p>Click the button to change the color of all p elements.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var myCollection = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < myCollection.length; i++) {
+                myCollection[i].style.color = "red";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

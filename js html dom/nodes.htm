@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DOM Nodes</title></head>
+<body>
+
+    <!-- Creating New HTML Elements (Nodes) -->
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is a new paragraph.");
+        para.appendChild(node);
+
+        var element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>
+    <hr>
+
+    <!-- Creating new HTML Elements - insertBefore() -->
+    <div id="div2">
+    <p id="p3">This is a paragraph.</p>
+    <p id="p4">This is another paragraph.</p>
+    </div>
+    
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is a new paragraph.");
+        para.appendChild(node);
+        
+        var element = document.getElementById("div2");
+        var child = document.getElementById("p3");
+        element.insertBefore(para,child);
+    </script>
+    <hr>
+
+    <!-- Removing Existing HTML Elements  - removeChild()-->
+    <div id="div3">
+    <p id="p5">This is a paragraph.</p>
+    <p id="p6">This is another paragraph.</p>
+    </div>
+    
+    <script>
+        var parent = document.getElementById("div3");
+        var child = document.getElementById("p5");
+        parent.removeChild(child);
+    </script>
+    <hr>
+
+    <!-- Replacing HTML Elements -replaceChild() -->
+    <div id="div4">
+    <p id="p7">This is a paragraph.</p>
+    <p id="p8">This is another paragraph.</p>
+    </div>
+    
+    <script>
+        var parent = document.getElementById("div4");
+        var child = document.getElementById("p7");
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is a new paragraph.");
+        para.appendChild(node);
+        parent.replaceChild(para,child);
+    </script>
+    <hr>
+</body>
+</html>

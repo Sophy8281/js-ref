@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DOM Events</title></head>
+<body>
+
+<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1><hr>
+
+<h1 onclick="changeText(this)">Click on this text!</h1><hr>
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+
+<p id="demo"></p><hr>
+
+<p>Click "Try it" to execute the displayDate1() function.</p>
+<button id="myBtn">Try it</button>
+
+<p id="demo1"></p><hr>
+
+<!-- onchange -->
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<!-- onmouseover and onmouseout -->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#9bd938;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<hr>
+
+<!-- onmousedown, onmouseup and onclick Events -->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script src="events.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head><title>JavaScript addEventListener()</title></head>
+    <style>
+        #myDiv1, #myDiv2 {
+            background-color: coral;
+            padding: 50px;
+        }
+        #myP1, #myP2 {
+            background-color: white; 
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+        #myDIV {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        
+        </style>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p><hr>
+
+<!-- alert -->
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn1">Try it</button><hr></hr>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn2">Try it</button><hr>
+
+<!-- Add Many Event Handlers to the Same Element - 2 clicks-->
+<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+<button id="myBtn3">Try it</button><hr>
+
+<!-- Add Many Event Handlers to the Same Element - diff events-->
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+
+<button id="myBtn4">Try it</button>
+<p id="demo1"></p><hr>
+
+<!-- Add an Event Handler to the Window Object -->
+<p>This example uses the addEventListener() method on the window object.</p>
+<p>Try resizing this browser window to trigger the "resize" event handler.</p>
+
+<p id="demo2"></p><hr>
+
+<!-- Passing Parameters -->
+<p>This example demonstrates how to pass parameter values when using the addEventListener() method.</p>
+<p>Click the button to perform a calculation.</p>
+
+<button id="myBtn5">Try it</button>
+
+<p id="demo3"></p>
+
+<!-- Event Bubbling or Event Capturing -->
+<div id="myDiv1">
+    <h2>Bubbling:</h2>
+    <p id="myP1">Click me!</p>
+  </div><br>
+  
+  <div id="myDiv2">
+    <h2>Capturing:</h2>
+    <p id="myP2">Click me!</p>
+  </div>
+
+<!-- The removeEventListener() method -->
+<div id="myDIV">This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.
+    <p>Click the button to remove the div's event handler.</p>
+    <button onclick="removeHandler()" id="myBtn6">Remove</button>
+</div>
+  
+<p id="demo4"></p>
+
+<script src="event_listeners.js"></script>
+
+</body>
+</html>
